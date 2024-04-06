@@ -6,9 +6,9 @@ RUN apt-get install -y git python3-pip libmariadb-dev-compat
 
 WORKDIR /opt
 
-RUN git clone https://github.com/Auwate/backend_repo.git
+RUN git clone https://github.com/Auwate/backend.git
 
-WORKDIR /opt/backend_repo
+WORKDIR /opt/backend
 
 RUN pip install -r requirements.txt
 

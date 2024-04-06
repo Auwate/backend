@@ -18,4 +18,3 @@ COPY docker-startup.sh /
 RUN chmod +x /docker-startup.sh
 
 CMD [ "/docker-startup.sh" ]
-

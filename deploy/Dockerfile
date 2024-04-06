@@ -14,6 +14,7 @@ RUN pip install -r requirements.txt
 
 EXPOSE 80
 
+COPY docker-startup.sh /
 RUN chmod +x /docker-startup.sh
 
 CMD [ "/docker-startup.sh" ]

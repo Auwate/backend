@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 25000
+sleep 50000
 
 python3 manage.py makemigrations
 python3 manage.py migrate

@@ -6,3 +6,7 @@
 ```
 pipreqs . --force
 ```
+
+## How it works
+
+`Django Rest Framework`: An easy way to create an API that talks to other applications.

@@ -29,23 +29,10 @@ def getRoutes (request):
             'method': 'GET',
             'body': {"body":""},
             'description': 'Returns recent web address queries'
-        },
-        {
-            'Endpoint': 'api/get',
-            'method': 'GET',
-            'body': None,
-            'description': "Returns output from scraping and AI generation."
         }
     ]
 
     return Response(routes)
-
-'''
-Gets the latest request for a web page.
-'''
-@api_view(['GET'])
-def getResponse (request):
-    return Response('Notes')
 
 '''
 Gets the recent web address queries

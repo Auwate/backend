@@ -65,7 +65,7 @@ def getResponse (request):
 
         response = client.chat.completions.create ( # Send API request
             model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": "Explain to me who" + addr.body + "is and what" + addr.body + "might contain. Do not tell me that you cannot browse, I already know."}],
+            messages=[{"role": "user", "content": "Explain to me who " + addr.body + " is and what " + addr.body + " might contain. Do not tell me that you cannot browse, I already know."}],
         )
         # Serialize for sending through HTTP
         serializer = OpenAISerializer(data={'response': response.choices[0].message.content})
